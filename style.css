@@ -1,68 +1,56 @@
-*{
-    padding: 0;
-    margin: 0;
-    overflow-x: hidden;
+body {
+    margin: 0%;
+    background-color: #1B1C1E;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+#lyricer {
+    font-size: 8vh;
+    font-family: 'Roboto', sans-serif;
+    color: #F1F1F1;
+    overflow: hidden;
+    text-align: center;
 }
 
-.line1{
-
-    background-image: linear-gradient(90deg, #fd7e14 5%, #ffd43b 95%);
-
-    position: absolute;
-
-    width: 120%;
-
-    height: 70%;
-
-    transform: rotate(-190deg);
-
-    z-index: -20;
-
-}
-        
-.line1txt h1{
-    text-decoration: none;
-    color: white;
-    z-index: 20;
-}
-
-.line2{
-    background-image: linear-gradient(90deg, #fd7e14 5%, #ffd43b 95%);
-
-    position: absolute;
-
-    width: 120%;
-
-    height: 70%;
-
-    transform: rotate(190deg);
-
-    z-index: -20;
-
+audio {
+    /*border-radius: 90px;*/
+    width: 250px;
+    height: 45px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+    
+    audio::-webkit-media-controls-mute-button {
+    display: none !important;
+    }
+    
+    audio::-webkit-media-controls-volume-slider {
+    display: none !important;
+    }
+    
+    audio::-webkit-media-controls-volume-control-container.closed {
+    display: none !important;
+    }
+    audio::-webkit-media-controls-volume-control-container{
+    display: none !important;
 }
 
-.whitespacetxt h1{
-    text-decoration: none;
-    color: black;
-    z-index: 20;
+#lyricer ul {
+    list-style-type: none;
+    padding: 5px;
 }
 
-.line3{
-
-    background-image: linear-gradient(90deg, #fd7e14 5%, #ffd43b 95%);
-
-    position: absolute;
-
-    width: 120%;
-
-    height: 70%;
-
-    transform: rotate(-190deg);
-
-    z-index: -20;
-
+#lyricer ul li {
+    overflow: auto;
 }
+
+/*
+audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
+    background-color: red;
+}
+
+
+#lyricer .lyricer-current-line {
+    color: #fff;
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #ff2d95, 0 0 6px #ff2d95, 0 0 8px #ff2d95, 0 0 10px #ff2d95, 0 0 12px #ff2d95;
+}
+*/

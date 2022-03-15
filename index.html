@@ -1,33 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrcier Test</title>
+    <script type="text/javascript" src="https://rawcdn.githack.com/lusaisai/Lyricer/5824e3ce264559db42b2baecb5e64ceaec5036c1/lyricer.min.js"></script>
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/lusaisai/Lyricer/master/lyricer.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div style = "position: absolute; left:-180px; top:-166px;" class="line1"></div>
-
-    <div class="line1txt">
-        <h1 style="position: absolute; left: 25%; top: 20%;">Armando is so fucking awesome</h1>
+    <audio id="audio" controls controlsList="nofullscreen nodownload noremoteplayback noplaybackrate">
+        <source src="5 minutes of silence.mp3" type="audio/mp3">
+    </audio>
+    
+    <div id="lyricer">
     </div>
-
-    <div style = "position: absolute; left:-10%; top:90%;" class="line2"></div>
-
-    <div  class="whitespacetxt">
-        <h1 style="position: absolute; left: 40%; top: 69%;">Armando is so fucking awesome</h1>
-    </div>
-
-    <div style = "position: absolute; left:-180px; bottom: -167%;" class="line3"></div>
-
-    <div  class="whitespace2txt">
-        <h1 style="position: absolute; left: 5%; top: 176%;">Armando is so fucking awesome</h1>
-    </div>
+    <script src="lyrics.js"></script>
 </body>
 </html>
